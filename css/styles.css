@@ -34,6 +34,40 @@ p{
 }
 button{
     font-size: 12px;
-    font-family: 'Oswald';
+    font-family: 'Oswald' sans-serif;
     font-weight: 400;
+}
+
+header{
+    height: 80px;
+    background: #161616;
+}
+
+.hero{
+    height: 400px;
+    background: #333;
+}
+.product-lineup-container{
+    height: 400px;
+    background: #444;
+}
+
+.featured-product-container{
+    height: 400px;
+    background: #555;
+}
+
+.product-support-container{
+    height: 400px;
+    background: #666;
+}
+
+.subscription-container{
+    height: 400px;
+    background: #888;
+}
+
+footer{
+    height: 400px;
+    background: #999;
 }
