@@ -37,7 +37,7 @@ p{
 }
 button{
     font-size: 12px;
-    font-family: 'Oswald' sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
 
@@ -48,13 +48,72 @@ button{
 header{
     height: 80px;
     background: #161616;
+    padding-top: 20px;
 }
 header .logo{
     background-image: url('../beats-assets/img/logo.svg');
     height: 40px;
     width: 40px;
     background-size: 40px;
+}
+header ul{
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+}
+header li{
+    display: inline-block;
+    margin-left: 25px;
+}
+header a {
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+}
+header a:hover{
+    color: #161616;
+    text-decoration: none;
+}
 
+.mobile-nav{
+    display: none;
+    text-align: center;
+}
+.mobile-nav .logo{
+    display: inline-block;
+
+}
+.mobile-nav .hamburger-container,
+.mobile-nav .search-container{
+    width: 40px;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.mobile-nav .logo-container{
+    display: inline-block;
+    width: calc(100% - 80px);
+    margin-left: -4px;
+}
+.mobile-nav button{
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+@media(max-width: 769px){
+    .mobile-nav{
+        display: block;
+    }
+    .desktop-nav{
+        display: none;
+    }
+}
+
+.desktop-nav .logo{
+    float: left;
 }
 
 .hero{
