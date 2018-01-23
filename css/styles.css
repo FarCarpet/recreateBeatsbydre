@@ -19,7 +19,7 @@ h1, h2, h3,{
 }
 h1{
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 900;
 }
 h2{
     font-size: 50px;
@@ -35,11 +35,33 @@ p{
     font-size: 16px;
     font-weight: 400;
 }
-button{
+.button{
     font-size: 12px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    background: #e01e3c;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-right: 20px;
 }
+.red-button{
+    background:  #e01e3c;
+    border: 2px solid #e01e3c;
+    color: white;
+}
+.light-button{
+    background: transparent;
+    border: 2px solid #999;
+    color: #ffffff;
+}
+.dark-button{
+    background: transparent;
+    border: 2px solid #999;
+    color: #161616;
+}
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 - - - - - - - - - - - Header Styles - - - - - - - - - - -
@@ -49,7 +71,7 @@ button{
 header{
     height: 80px;
     background: #161616;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 header .logo{
     background-image: url('../beats-assets/img/logo.svg');
@@ -109,7 +131,7 @@ header .logo{
     border: none;
 }
 
-@media(max-width: 769px){
+@media(max-width: 800px){
     .mobile-nav{
         display: block;
     }
@@ -127,12 +149,40 @@ header .logo{
 - - - - - - - - - - - Hero Styles - - - - - - - - - - -
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .hero{
-    height: 400px;
+    height: calc(100vh - 80px);
     background: #333;
+    background-image: url('../beats-assets/img/hero-large.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
 }
 
+.hero-text-container{
+    padding-top: 60vh;
+}
 
+.hero-text-container h1{
+    margin-bottom: 20px;
+}
+.hero-text-container p{
+    margin-bottom: 40px;
+}
+@media (max-width: 800px) {
+        .hero{
+            background-image: url('../beats-assets/img/hero-small.jpg');
+        }
+        .hero-text-container h1{
+            font-size: 30px;
+        }
+        .hero-text-container p{
+            font-size: 12px;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
 
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 - - - - - - - - - - - Product Lineup Styles - - - - - - - - - - -
