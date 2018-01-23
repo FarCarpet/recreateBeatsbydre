@@ -45,6 +45,7 @@ button{
 - - - - - - - - - - - Header Styles - - - - - - - - - - -
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+/* * * * * * * *   General * * * * * * *  */
 header{
     height: 80px;
     background: #161616;
@@ -56,27 +57,30 @@ header .logo{
     width: 40px;
     background-size: 40px;
 }
-header ul{
+
+/* * * * * * * *   Desktop * * * * * * *  */
+.desktop-nav ul{
     float: right;
     margin-top: 10px;
     padding: 0;
     width: calc(100% - 60px);
     text-align: right;
 }
-header li{
+.desktop-nav li{
     display: inline-block;
     margin-left: 25px;
 }
-header a {
+.desktop-nav a {
     color: white;
     text-transform: capitalize;
     font-family: 'Oswald', sans-serif;
 }
-header a:hover{
+.desktop-nav a:hover{
     color: #161616;
     text-decoration: none;
 }
 
+/* * * * * * * *   Mobile * * * * * * *  */
 .mobile-nav{
     display: none;
     text-align: center;
@@ -90,6 +94,8 @@ header a:hover{
     width: 40px;
     display: inline-block;
     margin-left: -4px;
+    vertical-align: top;
+    margin-top: 8px;
 }
 
 .mobile-nav .logo-container{
@@ -116,30 +122,52 @@ header a:hover{
     float: left;
 }
 
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - Hero Styles - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .hero{
     height: 400px;
     background: #333;
 }
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - Product Lineup Styles - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .product-lineup-container{
     height: 400px;
     background: #444;
 }
-
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - Featured Product Styles - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .featured-product-container{
     height: 400px;
     background: #555;
 }
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - Product Support Styles - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .product-support-container{
     height: 400px;
     background: #666;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - Subscription Styles - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .subscription-container{
     height: 400px;
     background: #888;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - Footer Styles - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 footer{
     height: 400px;
     background: #999;
